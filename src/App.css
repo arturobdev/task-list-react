@@ -4,3 +4,6 @@
   padding: 2rem;
   text-align: center;
 }
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  padding: 5px 24px;
+}
