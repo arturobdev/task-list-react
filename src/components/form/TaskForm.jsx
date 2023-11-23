@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { postData } from '../../API/api';
 import { useForm } from '../../hooks/useForm';
+import './taskForm.css'
 
 export const TaskForm = () => {
 
@@ -21,7 +22,7 @@ export const TaskForm = () => {
     }
 
     return (
-        <Form onSubmit={handleSubmit}>
+        <Form  className='task-form' onSubmit={handleSubmit}>
             <Form.Group className="mb-3" >
                 <Form.Label>Tipo de tarea</Form.Label>
                 <Form.Control type="text" name="title" value={formValues.title} placeholder="Ingrese nueva tarea" onChange={handleInputChange} />
